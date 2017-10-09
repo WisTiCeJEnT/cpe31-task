@@ -1,12 +1,11 @@
 def hdraw(n):
-    for i in range((n*4) - (n-1)):print("*",end="")
-    print('')
+    print("*"*(n*3+1))
     for i in range(2):
         for i in range((n*4) - (n-1)):
             if(i % 3 == 0):print("*",end="")
             else:print(" ",end="")
-        print('')
-    for i in range((n*4) - (n-1)):print("*",end="")
+        print()
+    print("*"*(n*3+1))
 def vdraw(n):
     for i in range(n):
         if(i==0):print("****\n*  *\n*  *\n****")
